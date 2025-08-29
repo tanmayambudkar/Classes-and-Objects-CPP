@@ -46,7 +46,7 @@ Algorithm: Class and Object in C++ (Student Information)
 3. In the `main()` function:
    1. Create an object `s1` of type `Student`.
    2. Assign values to `s1`’s attributes:
-       `name = "Yash Rastogi"`
+       `name = "Tanmay Ambudkar"`
        `branch = "ENTC"`
        `subject = "C++"`
        `year = "2nd Year"`
