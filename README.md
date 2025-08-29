@@ -34,115 +34,117 @@ The Concept of Classes and Objects is demonstrated using the following codes,
 
 # Algorithms:
 
-Algorithm: Class and Object in C++ (Student Information)
+1. Car-Details-Using-Class
 
-1. Start
-2. Define a class `Student` with the following public data members:
-    `name` (string)
-    `branch` (string)
-    `subject` (string)
-    `year` (string)
-    `result` (float)
-3. In the `main()` function:
-   1. Create an object `s1` of type `Student`.
-   2. Assign values to `s1`’s attributes:
-       `name = "Tanmay Ambudkar"`
-       `branch = "ENTC"`
-       `subject = "C++"`
-       `year = "2nd Year"`
-       `result = 9.5`
-   3. Display all details of `s1`.
-   4. Reassign new values to `s1`:
-     `name = "Yashpratapsingh"`
-       `branch = "ENTC"`
-       `subject = "C++"`
-        `year = "2nd Year"`
-       `result = 6.9`
-   5. Display updated details of `s1`.
-4. End
+Algorithm:
 
-Algorithm: Calculator using Class and Objects
+Start.
 
-1. Start
-2. Define a class `Calculator` with the following public data members:
-    `a`, `b` (float, operands)
-    `add`, `diff`, `mul`, `div` (float, results)
-    Member functions:
-      `input()` → to read values of `a` and `b`.
-      `addition()` → compute `a + b`.
-      `subtraction()` → compute `a - b`.
-      `mult()` → compute `a * b`.
-      `div1()` → compute `a / b`.
-3. Define function `Calculator::input()` to take input of two numbers from user.
-4. Define function `Calculator::mult()` to calculate multiplication.
-5. Define function `Calculator::div1()` to calculate division.
-6. In `main()`:
-   1. Create an object `c1` of class `Calculator`.
-   2. Call `c1.input()` to read numbers.
-   3. Call all calculation functions (`mult()`, `div1()`, `addition()`, `subtraction()`).
-   4. Display results:
-      Addition
-      Subtraction
-      Multiplication
-       Division
-7. End
-8. 
-Algorithm: Car Information using Class and Objects
+Define a Car class with attributes: owner name, contact, car brand, car name, manufacture year, years used.
 
-1. Start
-2. Define a class `Car` with the following public data members:
-    `car_model` (string)
-    `car_yr` (string)
-    `car_brand` (string)
-    Member function `info()` to input car details.
-3. Define function `Car::info()`:
-   1. Display *"Enter the brand of the Car:" and read `car_brand`.
-   2. Display *"Enter the year of manufacture of the Car:"* and read `car_yr`.
-   3. Display *"Enter the model of the Car:" and read `car_model`.
-4. In `main()`:
-   1. Create an object `c1` of class `Car`.
-   2. Call `c1.info()` to input car details.
-   3. Display the stored details:
-       Brand
-       Year of manufacture
-       Model
-5. End
+Define a member function info() to input owner and car details from the user.
 
-Algorithm: Calculate Rectangle Area using Class and Objects
+In `main()`, create a Car object.
 
-1. Start
-2. Define a class `rec_area` with the following public data members:
-   `length` (float)
-   `breadth` (float)
-   `area` (float)
-    Member function `area1()` to calculate area.
-3. Define function `rec_area::area1()`:
-   1. Display *"Enter the length of the rectangle:"* and read `length`.
-   2. Display *"Enter the breadth:"* and read `breadth`.
-   3. Calculate `area = length * breadth`.
-4. In `main()`:
-   1. Create an object `r1` of class `rec_area`.
-   2. Call `r1.area1()` to input dimensions and calculate area.
-   3. Display *"Area of the rectangle is:"* followed by `area`.
-5. End
+Call the `info()` function to read details.
 
-Algorithm: Calculate Volume of a Cuboid using Class and Objects
+Display the owner and car details.
 
-1. Start
-2. Define a class `cuboid` with:
-   Private data members:
+End.
 
-     `height = 10.0`
-      `width = 20.0`
-      `length = 45.0`
-     Public member function:
 
-      `volume()` → calculates and returns `height * width * length`.
-3. In `main()`:
-   1. Create an object `c1` of class `cuboid`.
-   2. Call the `volume()` function using object `c1` and store the result in variable `vol`.
-   3. Display `"Volume:"` followed by `vol`.
-4. End
+2. Volume-of-Cuboid
+
+Algorithm:
+
+Start.
+
+Define a cuboid class with attributes: length, width, and height.
+
+Assign initial values to these attributes (e.g., length=45.0, width=20.0, height=10.0).
+
+Define a member function `volume()` to calculate and return `height × width × length`.
+
+In `main()`, create a cuboid object.
+
+Call the `volume()` function on the object and store the result.
+
+Display the computed volume.
+
+End.
+
+3. Calculator-using-Class.cpp
+
+Algorithm:
+
+Start.
+
+Define a class calc with attributes: `x`, `y`, `add`, `subs`, `div`, `multi`.
+
+Define member functions for input, addition, and subtraction.
+
+Define non-member functions (using object reference) for multiplication and division.
+
+In `main()`, create a calc object.
+
+Use the object to:
+
+Input values,
+
+Perform addition and subtraction (member functions),
+
+Perform multiplication and division (external functions).
+
+Output the results of all operations.
+
+End.
+
+4. Area-of-Rectangle-Using-Class
+
+Algorithm:
+
+Start.
+
+Define a class rec with attributes: length, width, area.
+
+Define a global function `area()` that:
+
+Accepts a rectangle object by reference,
+
+Inputs the length and width from the user,
+
+Calculates and sets the area.
+
+In `main()`, create a rec object.
+
+Call the `area()` function to input values and set the area.
+
+Display the rectangle’s length, width, and area.
+
+End.
+
+5. Student-Information-Using-Class
+Algorithm:
+
+Start.
+
+Define a class Student with attributes: name, branch, subject, year, result.
+
+In `main()`, define an array of Student objects (size 3).
+
+Define and assign a results array with 3 float values.
+
+For each student (loop 3 times):
+
+Input name, branch, year, and subject.
+
+Assign result from the results array.
+
+For each student (loop 3 times):
+
+Display stored details and result.
+
+End.
 
 # Conclusion:
 The Above codes demonstrates the usage of classes and objects in C++ , Then the types of access specifier was also demonstrated using the codes.
